@@ -1,0 +1,29 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "RM",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunu70/wetubeRM.git"
+  },
+  "author": "sunu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunu70/wetubeRM/issues"
+  },
+  "homepage": "https://github.com/sunu70/wetubeRM#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.4",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11"
+  }
+}

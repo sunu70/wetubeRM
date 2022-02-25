@@ -10,9 +10,11 @@ const PORT = 4000;
 const app = express();
 const logger = morgan("dev");
 
+// app.set >> pug 셋팅
+app.set("view engine", "pug");
+app.set("views", process.cwd() + "/src/views");
 app.use(logger);
 // app.use Middleware를 사용하기 위함!! 사용할 때 Middleware가 먼저 나오도록 설정!!
-
 app.use("/", globalRouter);
 app.use("/users", userRouter);
 app.use("/videos", videoRouter);
